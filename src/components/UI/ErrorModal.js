@@ -6,8 +6,8 @@ import classes from "./errorModal.module.css";
 
 const ErrorModal = (props) => {
   return (
-    <>
-      <div className={classes.backdrop}>
+    <div>
+      <div className={classes.backdrop} onClick={props.onConfirm}>
         <Card className={classes.modal}>
           <header className={classes.header}>
             <h2>{props.title}</h2>
@@ -16,11 +16,11 @@ const ErrorModal = (props) => {
             <p>{props.message}</p>
           </div>
           <footer className={classes.action}>
-            <Button>Okay</Button>
+            <Button onClick={props.onConfirm}>Okay</Button>
           </footer>
         </Card>
       </div>
-    </>
+    </div>
   );
 };
 

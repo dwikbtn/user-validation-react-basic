@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../UI/Card";
-import ErrorModal from "../UI/ErrorModal";
 
 import classes from "./UserList.module.css";
 
